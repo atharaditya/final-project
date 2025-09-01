@@ -85,6 +85,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,572,490);
 p.nominalBounds = new cjs.Rectangle(0,0,572,490);
 
 
+(lib.map = function() {
+	this.initialize(img.map);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,87,87);
+
+
 (lib.MbakKepo11 = function() {
 	this.initialize(img.MbakKepo11);
 }).prototype = p = new cjs.Bitmap();
@@ -887,6 +893,27 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,227.2,244.1);
 
 
+(lib.map_1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib.map();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.map_1, new cjs.Rectangle(0,0,87,87), null);
+
+
 (lib.btn20 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1452,10 +1479,10 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,120,149,150,180,181,210,240,241,270,300,301,330,360,361,390,420,421];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.btn1.mouseEnabled = true;
-		this.btn1.cursor = "pointer";
+		this.map.mouseEnabled = true;
+		this.map.cursor = "pointer";
 		
-		this.btn1.addEventListener("click", function() {
+		this.map.addEventListener("click", function() {
 		    window.location.href = "scene1.html?goto=55";
 		});
 	}
@@ -1509,9 +1536,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(210);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_180 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_181 = function() {
 		this.stop();
@@ -1521,6 +1566,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_4()
 		{
 			this.gotoAndPlay(150);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_210 = function() {
@@ -1538,9 +1592,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(241);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_240 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_241 = function() {
 		this.stop();
@@ -1550,6 +1622,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_7()
 		{
 			this.gotoAndPlay(210);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_270 = function() {
@@ -1575,9 +1656,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(330);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_300 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_301 = function() {
 		this.stop();
@@ -1587,6 +1686,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_9()
 		{
 			this.gotoAndPlay(270);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_330 = function() {
@@ -1604,9 +1712,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(361);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_360 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_361 = function() {
 		this.stop();
@@ -1616,6 +1742,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_13()
 		{
 			this.gotoAndPlay(330);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_390 = function() {
@@ -1633,9 +1768,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(421);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_420 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_421 = function() {
 		this.stop();
@@ -1646,17 +1799,30 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(390);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(120).call(this.frame_120).wait(29).call(this.frame_149).wait(1).call(this.frame_150).wait(30).call(this.frame_180).wait(1).call(this.frame_181).wait(29).call(this.frame_210).wait(30).call(this.frame_240).wait(1).call(this.frame_241).wait(29).call(this.frame_270).wait(30).call(this.frame_300).wait(1).call(this.frame_301).wait(29).call(this.frame_330).wait(30).call(this.frame_360).wait(1).call(this.frame_361).wait(29).call(this.frame_390).wait(30).call(this.frame_420).wait(1).call(this.frame_421).wait(29));
 
 	// actions
+	this.map = new lib.map_1();
+	this.map.name = "map";
+	this.map.setTransform(73.5,56.5,1,1,0,0,0,43.5,43.5);
+
 	this.btn1 = new lib.btn1();
 	this.btn1.name = "btn1";
-	this.btn1.setTransform(73.5,56.5,1,1,0,0,0,43.5,43.5);
+	this.btn1.setTransform(186.1,56.5,1,1,0,0,0,43.5,43.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.btn1).wait(450));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.map}]}).to({state:[{t:this.map}]},120).to({state:[{t:this.map}]},29).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).wait(29));
 
 	// buttons
 	this.btn4 = new lib.btn4();
@@ -11546,6 +11712,7 @@ lib.properties = {
 		{src:"images14/home.png", id:"home"},
 		{src:"images14/hutanbaning.png", id:"hutanbaning"},
 		{src:"images14/lapissalju.png", id:"lapissalju"},
+		{src:"images14/map.png", id:"map"},
 		{src:"images14/MbakKepo11.png", id:"MbakKepo11"},
 		{src:"images14/MbakKepo13.png", id:"MbakKepo13"},
 		{src:"images14/MbakKepo15.png", id:"MbakKepo15"},

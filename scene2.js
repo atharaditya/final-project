@@ -79,6 +79,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,87,87);
 p.nominalBounds = new cjs.Rectangle(0,0,572,490);
 
 
+(lib.map = function() {
+	this.initialize(img.map);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,87,87);
+
+
 (lib.masjid_sambas = function() {
 	this.initialize(img.masjid_sambas);
 }).prototype = p = new cjs.Bitmap();
@@ -865,6 +871,27 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,227.2,244.1);
 
 
+(lib.map_1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib.map();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.map_1, new cjs.Rectangle(0,0,87,87), null);
+
+
 (lib.btn20 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1559,10 +1586,10 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,120,149,150,180,181,210,240,241,270,300,301,330,360,361,390,420,421];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.btn1.mouseEnabled = true;
-		this.btn1.cursor = "pointer";
+		this.map.mouseEnabled = true;
+		this.map.cursor = "pointer";
 		
-		this.btn1.addEventListener("click", function() {
+		this.map.addEventListener("click", function() {
 		    window.location.href = "scene1.html?goto=55";
 		});
 	}
@@ -1616,9 +1643,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(210);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_180 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_181 = function() {
 		this.stop();
@@ -1628,6 +1673,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_4()
 		{
 			this.gotoAndPlay(150);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_210 = function() {
@@ -1645,9 +1699,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(241);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_240 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_241 = function() {
 		this.stop();
@@ -1657,6 +1729,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_7()
 		{
 			this.gotoAndPlay(210);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_270 = function() {
@@ -1682,9 +1763,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(330);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_300 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_301 = function() {
 		this.stop();
@@ -1694,6 +1793,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_9()
 		{
 			this.gotoAndPlay(270);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_330 = function() {
@@ -1711,9 +1819,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(361);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_360 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_361 = function() {
 		this.stop();
@@ -1723,6 +1849,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_13()
 		{
 			this.gotoAndPlay(330);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_390 = function() {
@@ -1740,9 +1875,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(421);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_420 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_421 = function() {
 		this.stop();
@@ -1753,17 +1906,30 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(390);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(120).call(this.frame_120).wait(29).call(this.frame_149).wait(1).call(this.frame_150).wait(30).call(this.frame_180).wait(1).call(this.frame_181).wait(29).call(this.frame_210).wait(30).call(this.frame_240).wait(1).call(this.frame_241).wait(29).call(this.frame_270).wait(30).call(this.frame_300).wait(1).call(this.frame_301).wait(29).call(this.frame_330).wait(30).call(this.frame_360).wait(1).call(this.frame_361).wait(29).call(this.frame_390).wait(30).call(this.frame_420).wait(1).call(this.frame_421).wait(29));
 
 	// actions
+	this.map = new lib.map_1();
+	this.map.name = "map";
+	this.map.setTransform(73.5,56.5,1,1,0,0,0,43.5,43.5);
+
 	this.btn1 = new lib.btn1();
 	this.btn1.name = "btn1";
-	this.btn1.setTransform(73.5,56.5,1,1,0,0,0,43.5,43.5);
+	this.btn1.setTransform(186.1,56.5,1,1,0,0,0,43.5,43.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.btn1).wait(450));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.map}]}).to({state:[{t:this.map}]},120).to({state:[{t:this.map}]},29).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).wait(29));
 
 	// buttons
 	this.btn4 = new lib.btn4();
@@ -10707,36 +10873,37 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images2/back.png?1754556532924", id:"back"},
-		{src:"images2/buburpadas.png?1754556532924", id:"buburpadas"},
-		{src:"images2/card13.png?1754556532924", id:"card13"},
-		{src:"images2/card14.png?1754556532924", id:"card14"},
-		{src:"images2/card15.png?1754556532924", id:"card15"},
-		{src:"images2/cloud.png?1754556532924", id:"cloud"},
-		{src:"images2/danausebedang.png?1754556532924", id:"danausebedang"},
-		{src:"images2/home.png?1754556532924", id:"home"},
-		{src:"images2/keratonsambas.png?1754556532924", id:"keratonsambas"},
-		{src:"images2/masjid_sambas.png?1754556532924", id:"masjid_sambas"},
-		{src:"images2/MbakKepo10.png?1754556532924", id:"MbakKepo10"},
-		{src:"images2/MbakKepo11.png?1754556532924", id:"MbakKepo11"},
-		{src:"images2/MbakKepo13.png?1754556532924", id:"MbakKepo13"},
-		{src:"images2/MbakKepo18.png?1754556532924", id:"MbakKepo18"},
-		{src:"images2/MbakKepo20.png?1754556532924", id:"MbakKepo20"},
-		{src:"images2/MbakKepo26.png?1754556532924", id:"MbakKepo26"},
-		{src:"images2/MbakKepo3.png?1754556532924", id:"MbakKepo3"},
-		{src:"images2/MbakKepo31.png?1754556532924", id:"MbakKepo31"},
-		{src:"images2/MbakKepo39.png?1754556532924", id:"MbakKepo39"},
-		{src:"images2/next.png?1754556532924", id:"next"},
-		{src:"images2/peta_buburpadas.png?1754556532924", id:"peta_buburpadas"},
-		{src:"images2/peta_keratonsambas.png?1754556532924", id:"peta_keratonsambas"},
-		{src:"images2/peta_masjidsambas.png?1754556532924", id:"peta_masjidsambas"},
-		{src:"images2/peta_sebedang.png?1754556532924", id:"peta_sebedang"},
-		{src:"images2/peta_temajuk.png?1754556532924", id:"peta_temajuk"},
-		{src:"images2/sambas.jpg?1754556532924", id:"sambas"},
-		{src:"images2/sign.png?1754556532924", id:"sign"},
-		{src:"images2/stonewall.png?1754556532924", id:"stonewall"},
-		{src:"images2/temajuk.png?1754556532924", id:"temajuk"},
-		{src:"images2/tree2.png?1754556532924", id:"tree2"}
+		{src:"images2/back.png", id:"back"},
+		{src:"images2/buburpadas.png", id:"buburpadas"},
+		{src:"images2/card13.png", id:"card13"},
+		{src:"images2/card14.png", id:"card14"},
+		{src:"images2/card15.png", id:"card15"},
+		{src:"images2/cloud.png", id:"cloud"},
+		{src:"images2/danausebedang.png", id:"danausebedang"},
+		{src:"images2/home.png", id:"home"},
+		{src:"images2/keratonsambas.png", id:"keratonsambas"},
+		{src:"images2/map.png", id:"map"},
+		{src:"images2/masjid_sambas.png", id:"masjid_sambas"},
+		{src:"images2/MbakKepo10.png", id:"MbakKepo10"},
+		{src:"images2/MbakKepo11.png", id:"MbakKepo11"},
+		{src:"images2/MbakKepo13.png", id:"MbakKepo13"},
+		{src:"images2/MbakKepo18.png", id:"MbakKepo18"},
+		{src:"images2/MbakKepo20.png", id:"MbakKepo20"},
+		{src:"images2/MbakKepo26.png", id:"MbakKepo26"},
+		{src:"images2/MbakKepo3.png", id:"MbakKepo3"},
+		{src:"images2/MbakKepo31.png", id:"MbakKepo31"},
+		{src:"images2/MbakKepo39.png", id:"MbakKepo39"},
+		{src:"images2/next.png", id:"next"},
+		{src:"images2/peta_buburpadas.png", id:"peta_buburpadas"},
+		{src:"images2/peta_keratonsambas.png", id:"peta_keratonsambas"},
+		{src:"images2/peta_masjidsambas.png", id:"peta_masjidsambas"},
+		{src:"images2/peta_sebedang.png", id:"peta_sebedang"},
+		{src:"images2/peta_temajuk.png", id:"peta_temajuk"},
+		{src:"images2/sambas.jpg", id:"sambas"},
+		{src:"images2/sign.png", id:"sign"},
+		{src:"images2/stonewall.png", id:"stonewall"},
+		{src:"images2/temajuk.png", id:"temajuk"},
+		{src:"images2/tree2.png", id:"tree2"}
 	],
 	preloads: []
 };

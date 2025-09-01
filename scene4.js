@@ -85,6 +85,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,572,490);
 p.nominalBounds = new cjs.Rectangle(0,0,572,490);
 
 
+(lib.map = function() {
+	this.initialize(img.map);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,87,87);
+
+
 (lib.MbakKepo10 = function() {
 	this.initialize(img.MbakKepo10);
 }).prototype = p = new cjs.Bitmap();
@@ -1227,6 +1233,27 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,227.2,244.1);
 
 
+(lib.map_1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib.map();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.map_1, new cjs.Rectangle(0,0,87,87), null);
+
+
 (lib.btn20 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1863,10 +1890,10 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,120,149,150,180,181,210,240,241,270,300,301,330,360,361,390,420,421];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.btn1.mouseEnabled = true;
-		this.btn1.cursor = "pointer";
+		this.map.mouseEnabled = true;
+		this.map.cursor = "pointer";
 		
-		this.btn1.addEventListener("click", function() {
+		this.map.addEventListener("click", function() {
 		    window.location.href = "scene1.html?goto=55";
 		});
 	}
@@ -1920,9 +1947,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(210);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_180 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_181 = function() {
 		this.stop();
@@ -1932,6 +1977,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_4()
 		{
 			this.gotoAndPlay(150);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_210 = function() {
@@ -1949,9 +2003,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(241);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_240 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_241 = function() {
 		this.stop();
@@ -1961,6 +2033,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_7()
 		{
 			this.gotoAndPlay(210);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_270 = function() {
@@ -1986,9 +2067,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(330);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_300 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_301 = function() {
 		this.stop();
@@ -1998,6 +2097,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_9()
 		{
 			this.gotoAndPlay(270);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_330 = function() {
@@ -2015,9 +2123,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(361);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_360 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_361 = function() {
 		this.stop();
@@ -2027,6 +2153,15 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_13()
 		{
 			this.gotoAndPlay(330);
+		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_390 = function() {
@@ -2044,9 +2179,27 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(421);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_420 = function() {
 		this.stop();
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_421 = function() {
 		this.stop();
@@ -2057,17 +2210,30 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(390);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(120).call(this.frame_120).wait(29).call(this.frame_149).wait(1).call(this.frame_150).wait(30).call(this.frame_180).wait(1).call(this.frame_181).wait(29).call(this.frame_210).wait(30).call(this.frame_240).wait(1).call(this.frame_241).wait(29).call(this.frame_270).wait(30).call(this.frame_300).wait(1).call(this.frame_301).wait(29).call(this.frame_330).wait(30).call(this.frame_360).wait(1).call(this.frame_361).wait(29).call(this.frame_390).wait(30).call(this.frame_420).wait(1).call(this.frame_421).wait(29));
 
 	// actions
+	this.map = new lib.map_1();
+	this.map.name = "map";
+	this.map.setTransform(73.5,56.5,1,1,0,0,0,43.5,43.5);
+
 	this.btn1 = new lib.btn1();
 	this.btn1.name = "btn1";
-	this.btn1.setTransform(73.5,56.5,1,1,0,0,0,43.5,43.5);
+	this.btn1.setTransform(186.1,56.5,1,1,0,0,0,43.5,43.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.btn1).wait(450));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.map}]}).to({state:[{t:this.map}]},120).to({state:[{t:this.map}]},29).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).to({state:[{t:this.map},{t:this.btn1}]},29).to({state:[{t:this.map},{t:this.btn1}]},30).to({state:[{t:this.map},{t:this.btn1}]},1).wait(29));
 
 	// buttons
 	this.btn4 = new lib.btn4();
@@ -7578,39 +7744,40 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images4/back.png?1754330191602", id:"back"},
-		{src:"images4/card1.png?1754330191602", id:"card1"},
-		{src:"images4/card2.png?1754330191602", id:"card2"},
-		{src:"images4/card3.png?1754330191602", id:"card3"},
-		{src:"images4/cloud.png?1754330191602", id:"cloud"},
-		{src:"images4/daengmanambon.png?1754330191602", id:"daengmanambon"},
-		{src:"images4/home.png?1754330191602", id:"home"},
-		{src:"images4/ikanasampedas.png?1754330191602", id:"ikanasampedas"},
-		{src:"images4/keratonamantubillah.png?1754330191602", id:"keratonamantubillah"},
-		{src:"images4/magrovepark.png?1754330191602", id:"magrovepark"},
-		{src:"images4/MbakKepo10.png?1754330191602", id:"MbakKepo10"},
-		{src:"images4/MbakKepo11.png?1754330191602", id:"MbakKepo11"},
-		{src:"images4/MbakKepo13.png?1754330191602", id:"MbakKepo13"},
-		{src:"images4/MbakKepo18.png?1754330191602", id:"MbakKepo18"},
-		{src:"images4/MbakKepo20.png?1754330191602", id:"MbakKepo20"},
-		{src:"images4/MbakKepo21.png?1754330191602", id:"MbakKepo21"},
-		{src:"images4/MbakKepo22.png?1754330191602", id:"MbakKepo22"},
-		{src:"images4/MbakKepo3.png?1754330191602", id:"MbakKepo3"},
-		{src:"images4/MbakKepo31.png?1754330191602", id:"MbakKepo31"},
-		{src:"images4/MbakKepo32.png?1754330191603", id:"MbakKepo32"},
-		{src:"images4/MbakKepo34.png?1754330191603", id:"MbakKepo34"},
-		{src:"images4/MbakKepo5.png?1754330191603", id:"MbakKepo5"},
-		{src:"images4/MbakKepo9.png?1754330191603", id:"MbakKepo9"},
-		{src:"images4/mempawah.png?1754330191603", id:"mempawah"},
-		{src:"images4/next.png?1754330191603", id:"next"},
-		{src:"images4/peta_amantibillah.png?1754330191603", id:"peta_amantibillah"},
-		{src:"images4/peta_daengmanambon.png?1754330191603", id:"peta_daengmanambon"},
-		{src:"images4/peta_ikanasampedas.png?1754330191603", id:"peta_ikanasampedas"},
-		{src:"images4/peta_magrovepark.png?1754330191603", id:"peta_magrovepark"},
-		{src:"images4/peta_nusantararesort.png?1754330191603", id:"peta_nusantararesort"},
-		{src:"images4/stonewall.png?1754330191603", id:"stonewall"},
-		{src:"images4/tree2.png?1754330191603", id:"tree2"},
-		{src:"images4/wisatanusantara.png?1754330191603", id:"wisatanusantara"}
+		{src:"images4/back.png?1756361562707", id:"back"},
+		{src:"images4/card1.png?1756361562707", id:"card1"},
+		{src:"images4/card2.png?1756361562707", id:"card2"},
+		{src:"images4/card3.png?1756361562707", id:"card3"},
+		{src:"images4/cloud.png?1756361562707", id:"cloud"},
+		{src:"images4/daengmanambon.png?1756361562707", id:"daengmanambon"},
+		{src:"images4/home.png?1756361562707", id:"home"},
+		{src:"images4/ikanasampedas.png?1756361562707", id:"ikanasampedas"},
+		{src:"images4/keratonamantubillah.png?1756361562707", id:"keratonamantubillah"},
+		{src:"images4/magrovepark.png?1756361562707", id:"magrovepark"},
+		{src:"images4/map.png?1756361562707", id:"map"},
+		{src:"images4/MbakKepo10.png?1756361562707", id:"MbakKepo10"},
+		{src:"images4/MbakKepo11.png?1756361562707", id:"MbakKepo11"},
+		{src:"images4/MbakKepo13.png?1756361562707", id:"MbakKepo13"},
+		{src:"images4/MbakKepo18.png?1756361562707", id:"MbakKepo18"},
+		{src:"images4/MbakKepo20.png?1756361562707", id:"MbakKepo20"},
+		{src:"images4/MbakKepo21.png?1756361562707", id:"MbakKepo21"},
+		{src:"images4/MbakKepo22.png?1756361562707", id:"MbakKepo22"},
+		{src:"images4/MbakKepo3.png?1756361562707", id:"MbakKepo3"},
+		{src:"images4/MbakKepo31.png?1756361562707", id:"MbakKepo31"},
+		{src:"images4/MbakKepo32.png?1756361562707", id:"MbakKepo32"},
+		{src:"images4/MbakKepo34.png?1756361562707", id:"MbakKepo34"},
+		{src:"images4/MbakKepo5.png?1756361562707", id:"MbakKepo5"},
+		{src:"images4/MbakKepo9.png?1756361562707", id:"MbakKepo9"},
+		{src:"images4/mempawah.png?1756361562707", id:"mempawah"},
+		{src:"images4/next.png?1756361562707", id:"next"},
+		{src:"images4/peta_amantibillah.png?1756361562707", id:"peta_amantibillah"},
+		{src:"images4/peta_daengmanambon.png?1756361562707", id:"peta_daengmanambon"},
+		{src:"images4/peta_ikanasampedas.png?1756361562707", id:"peta_ikanasampedas"},
+		{src:"images4/peta_magrovepark.png?1756361562707", id:"peta_magrovepark"},
+		{src:"images4/peta_nusantararesort.png?1756361562707", id:"peta_nusantararesort"},
+		{src:"images4/stonewall.png?1756361562707", id:"stonewall"},
+		{src:"images4/tree2.png?1756361562707", id:"tree2"},
+		{src:"images4/wisatanusantara.png?1756361562707", id:"wisatanusantara"}
 	],
 	preloads: []
 };
