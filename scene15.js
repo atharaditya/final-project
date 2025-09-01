@@ -2105,9 +2105,23 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndStop(421);
 		}
+		
+		this.btn18.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_13()
+		{
+			this.gotoAndPlay(330);
+		}
 	}
 	this.frame_420 = function() {
 		this.stop();
+		
+		this.btn18.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_13()
+		{
+			this.gotoAndPlay(330);
+		}
 	}
 	this.frame_421 = function() {
 		this.stop();
@@ -2117,6 +2131,13 @@ if (reversed == null) { reversed = false; }
 		function fl_ClickToGoToAndPlayFromFrame_16()
 		{
 			this.gotoAndPlay(390);
+		}
+		
+		this.btn18.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_13()
+		{
+			this.gotoAndPlay(330);
 		}
 	}
 
