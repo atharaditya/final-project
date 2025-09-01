@@ -2089,6 +2089,15 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(330);
 		}
+		
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(120);
+		}
 	}
 	this.frame_390 = function() {
 		this.btn19.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_15.bind(this));
@@ -2106,21 +2115,25 @@ if (reversed == null) { reversed = false; }
 			this.gotoAndStop(421);
 		}
 		
-		this.btn18.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
 		
-		function fl_ClickToGoToAndPlayFromFrame_13()
+		function fl_ClickToGoToAndPlayFromFrame()
 		{
-			this.gotoAndPlay(330);
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_420 = function() {
 		this.stop();
 		
-		this.btn18.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
 		
-		function fl_ClickToGoToAndPlayFromFrame_13()
+		function fl_ClickToGoToAndPlayFromFrame()
 		{
-			this.gotoAndPlay(330);
+			this.gotoAndPlay(120);
 		}
 	}
 	this.frame_421 = function() {
@@ -2133,11 +2146,13 @@ if (reversed == null) { reversed = false; }
 			this.gotoAndPlay(390);
 		}
 		
-		this.btn18.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		this.btn1.mouseEnabled = true;
+		this.btn1.cursor = "pointer";
+		this.btn1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
 		
-		function fl_ClickToGoToAndPlayFromFrame_13()
+		function fl_ClickToGoToAndPlayFromFrame()
 		{
-			this.gotoAndPlay(330);
+			this.gotoAndPlay(120);
 		}
 	}
 
