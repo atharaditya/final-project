@@ -121,6 +121,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,1014,1025);
 p.nominalBounds = new cjs.Rectangle(0,0,1842,1885);
 
 
+(lib.nextend = function() {
+	this.initialize(img.nextend);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,71,71);
+
+
 (lib.next = function() {
 	this.initialize(img.next);
 }).prototype = p = new cjs.Bitmap();
@@ -1394,17 +1400,13 @@ if (reversed == null) { reversed = false; }
 	this.btn2.setTransform(470,536,1,1,0,0,0,126,128);
 	new cjs.ButtonHelper(this.btn2, 0, 1, 1);
 
+	this.instance = new lib.nextend();
+	this.instance.setTransform(701.4,573,0.5972,0.5972,0,0,180);
+
 	this.btn7 = new lib.btn7();
 	this.btn7.name = "btn7";
 	this.btn7.setTransform(756.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn7, 0, 1, 2, false, new lib.btn7(), 3);
-
-	this.instance = new lib.next();
-	this.instance.setTransform(701.4,615.4,0.6057,0.6057,180);
-
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA+g+BXAAQBXAAA/A+QA+A+AABXQAABYg+A+Qg/A+hXAAQhXAAg+g+g");
-	this.shape.setTransform(680.2,594.2);
 
 	this.btn6 = new lib.btn6();
 	this.btn6.name = "btn6";
@@ -1416,10 +1418,18 @@ if (reversed == null) { reversed = false; }
 	this.btn5.setTransform(1086,57.5,1,1,0,0,0,44,43.5);
 	new cjs.ButtonHelper(this.btn5, 0, 1, 1);
 
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA+g+BXAAQBXAAA/A+QA+A+AABXQAABYg+A+Qg/A+hXAAQhXAAg+g+g");
+	this.shape.setTransform(680.2,594.2);
+
 	this.btn8 = new lib.btn8();
 	this.btn8.name = "btn8";
 	this.btn8.setTransform(680.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn8, 0, 1, 2, false, new lib.btn8(), 3);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA/g+BWAAQBYAAA+A+QA+A+AABXQAABYg+A+Qg+A+hYAAQhWAAg/g+g");
+	this.shape_1.setTransform(756.2,594.2);
 
 	this.btn10 = new lib.btn10();
 	this.btn10.name = "btn10";
@@ -1436,10 +1446,6 @@ if (reversed == null) { reversed = false; }
 	this.btn11.setTransform(680.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn11, 0, 1, 2, false, new lib.btn11(), 3);
 
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA/g+BWAAQBYAAA+A+QA+A+AABXQAABYg+A+Qg+A+hYAAQhWAAg/g+g");
-	this.shape_1.setTransform(756.2,594.2);
-
 	this.btn17 = new lib.btn17();
 	this.btn17.name = "btn17";
 	this.btn17.setTransform(756.2,594.2,1,1,0,0,0,21.2,21.2);
@@ -1455,7 +1461,7 @@ if (reversed == null) { reversed = false; }
 	this.btn18.setTransform(680.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn18, 0, 1, 2, false, new lib.btn18(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btn2},{t:this.btn3}]},120).to({state:[{t:this.btn2},{t:this.btn3}]},29).to({state:[{t:this.btn5},{t:this.btn6},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn7}]},1).to({state:[{t:this.btn5},{t:this.btn6},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn7}]},30).to({state:[{t:this.btn5},{t:this.btn6},{t:this.shape,p:{rotation:180,x:756.2,skewY:0}},{t:this.instance,p:{rotation:0,x:735,y:573,skewX:0}},{t:this.btn8}]},1).to({state:[{t:this.btn9},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn10}]},29).to({state:[{t:this.btn9},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn10}]},30).to({state:[{t:this.btn9},{t:this.shape_1},{t:this.instance,p:{rotation:0,x:735,y:615.4,skewX:180}},{t:this.btn11}]},1).to({state:[{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn16},{t:this.btn17}]},29).to({state:[{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn16},{t:this.btn17}]},30).to({state:[{t:this.btn16},{t:this.btn18},{t:this.shape,p:{rotation:0,x:756.2,skewY:180}},{t:this.instance,p:{rotation:0,x:735,y:615.4,skewX:180}}]},1).wait(29));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btn2},{t:this.btn3}]},120).to({state:[{t:this.btn2},{t:this.btn3}]},29).to({state:[{t:this.shape},{t:this.btn5},{t:this.btn6},{t:this.btn7},{t:this.instance,p:{skewY:180,x:701.4}}]},1).to({state:[{t:this.shape},{t:this.btn5},{t:this.btn6},{t:this.btn7},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn5},{t:this.btn6},{t:this.btn8},{t:this.instance,p:{skewY:0,x:735}}]},1).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn10},{t:this.instance,p:{skewY:180,x:701.4}}]},29).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn10},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn9},{t:this.btn11},{t:this.instance,p:{skewY:0,x:735}}]},1).to({state:[{t:this.shape},{t:this.btn16},{t:this.btn17},{t:this.instance,p:{skewY:180,x:701.4}}]},29).to({state:[{t:this.shape},{t:this.btn16},{t:this.btn17},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn16},{t:this.btn18},{t:this.instance,p:{skewY:0,x:735}}]},1).wait(29));
 
 	// teks
 	this.shape_2 = new cjs.Shape();
@@ -6563,6 +6569,7 @@ lib.properties = {
 		{src:"images7/MbakKepo20.png", id:"MbakKepo20"},
 		{src:"images7/MbakKepo21.png", id:"MbakKepo21"},
 		{src:"images7/MbakKepo3.png", id:"MbakKepo3"},
+		{src:"images7/nextend.png", id:"nextend"},
 		{src:"images7/next.png", id:"next"},
 		{src:"images7/peta_bingke.png", id:"peta_bingke"},
 		{src:"images7/peta_keratonkadariah.png", id:"peta_keratonkadariah"},

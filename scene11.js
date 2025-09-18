@@ -145,6 +145,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,500,500);
 p.nominalBounds = new cjs.Rectangle(0,0,408,612);
 
 
+(lib.nextend = function() {
+	this.initialize(img.nextend);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,71,71);
+
+
 (lib.next = function() {
 	this.initialize(img.next);
 }).prototype = p = new cjs.Bitmap();
@@ -1858,17 +1864,13 @@ if (reversed == null) { reversed = false; }
 	this.btn2.setTransform(292,537.1,1,1,0,0,0,126,129.1);
 	new cjs.ButtonHelper(this.btn2, 0, 1, 1);
 
+	this.instance = new lib.nextend();
+	this.instance.setTransform(701.4,573,0.5972,0.5972,0,0,180);
+
 	this.btn7 = new lib.btn7();
 	this.btn7.name = "btn7";
 	this.btn7.setTransform(756.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn7, 0, 1, 2, false, new lib.btn7(), 3);
-
-	this.instance = new lib.next();
-	this.instance.setTransform(701.4,615.4,0.6057,0.6057,180);
-
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA+g+BXAAQBXAAA/A+QA+A+AABXQAABYg+A+Qg/A+hXAAQhXAAg+g+g");
-	this.shape.setTransform(680.2,594.2);
 
 	this.btn6 = new lib.btn6();
 	this.btn6.name = "btn6";
@@ -1880,10 +1882,18 @@ if (reversed == null) { reversed = false; }
 	this.btn5.setTransform(1086,57.5,1,1,0,0,0,44,43.5);
 	new cjs.ButtonHelper(this.btn5, 0, 1, 1);
 
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA+g+BXAAQBXAAA/A+QA+A+AABXQAABYg+A+Qg/A+hXAAQhXAAg+g+g");
+	this.shape.setTransform(680.2,594.2);
+
 	this.btn8 = new lib.btn8();
 	this.btn8.name = "btn8";
 	this.btn8.setTransform(680.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn8, 0, 1, 2, false, new lib.btn8(), 3);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA/g+BWAAQBYAAA+A+QA+A+AABXQAABYg+A+Qg+A+hYAAQhWAAg/g+g");
+	this.shape_1.setTransform(756.2,594.2);
 
 	this.btn10 = new lib.btn10();
 	this.btn10.name = "btn10";
@@ -1899,10 +1909,6 @@ if (reversed == null) { reversed = false; }
 	this.btn11.name = "btn11";
 	this.btn11.setTransform(680.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn11, 0, 1, 2, false, new lib.btn11(), 3);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("rgba(204,204,204,0.8)").s().p("AiVCWQg+g+AAhYQAAhXA+g+QA/g+BWAAQBYAAA+A+QA+A+AABXQAABYg+A+Qg+A+hYAAQhWAAg/g+g");
-	this.shape_1.setTransform(756.2,594.2);
 
 	this.btn14 = new lib.btn14();
 	this.btn14.name = "btn14";
@@ -1949,7 +1955,7 @@ if (reversed == null) { reversed = false; }
 	this.btn21.setTransform(680.2,594.2,1,1,0,0,0,21.2,21.2);
 	new cjs.ButtonHelper(this.btn21, 0, 1, 2, false, new lib.btn21(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btn2},{t:this.btn3},{t:this.btn4}]},120).to({state:[{t:this.btn2},{t:this.btn3},{t:this.btn4}]},29).to({state:[{t:this.btn5},{t:this.btn6},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn7}]},1).to({state:[{t:this.btn5},{t:this.btn6},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn7}]},30).to({state:[{t:this.btn5},{t:this.btn6},{t:this.shape,p:{rotation:180,x:756.2,skewY:0}},{t:this.instance,p:{rotation:0,x:735,y:573,skewX:0}},{t:this.btn8}]},1).to({state:[{t:this.btn9},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn10}]},29).to({state:[{t:this.btn9},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn10}]},30).to({state:[{t:this.btn9},{t:this.shape_1},{t:this.instance,p:{rotation:0,x:735,y:615.4,skewX:180}},{t:this.btn11}]},1).to({state:[{t:this.btn9},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn12},{t:this.btn13},{t:this.btn14}]},29).to({state:[{t:this.btn9},{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn12},{t:this.btn13},{t:this.btn14}]},30).to({state:[{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.shape,p:{rotation:0,x:756.2,skewY:180}},{t:this.instance,p:{rotation:0,x:735,y:615.4,skewX:180}},{t:this.btn15}]},1).to({state:[{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn17}]},29).to({state:[{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn17}]},30).to({state:[{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.btn18},{t:this.shape,p:{rotation:0,x:756.2,skewY:180}},{t:this.instance,p:{rotation:0,x:735,y:615.4,skewX:180}}]},1).to({state:[{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn19},{t:this.btn20}]},29).to({state:[{t:this.shape,p:{rotation:0,x:680.2,skewY:0}},{t:this.instance,p:{rotation:180,x:701.4,y:615.4,skewX:0}},{t:this.btn19},{t:this.btn20}]},30).to({state:[{t:this.btn19},{t:this.shape,p:{rotation:0,x:756.2,skewY:180}},{t:this.instance,p:{rotation:0,x:735,y:615.4,skewX:180}},{t:this.btn21}]},1).wait(29));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btn2},{t:this.btn3},{t:this.btn4}]},120).to({state:[{t:this.btn2},{t:this.btn3},{t:this.btn4}]},29).to({state:[{t:this.shape},{t:this.btn5},{t:this.btn6},{t:this.btn7},{t:this.instance,p:{skewY:180,x:701.4}}]},1).to({state:[{t:this.shape},{t:this.btn5},{t:this.btn6},{t:this.btn7},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn5},{t:this.btn6},{t:this.btn8},{t:this.instance,p:{skewY:0,x:735}}]},1).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn10},{t:this.instance,p:{skewY:180,x:701.4}}]},29).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn10},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn9},{t:this.btn11},{t:this.instance,p:{skewY:0,x:735}}]},1).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.btn14},{t:this.instance,p:{skewY:180,x:701.4}}]},29).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.btn14},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.btn15},{t:this.instance,p:{skewY:0,x:735}}]},1).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.btn17},{t:this.instance,p:{skewY:180,x:701.4}}]},29).to({state:[{t:this.shape},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.btn17},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn9},{t:this.btn12},{t:this.btn13},{t:this.btn18},{t:this.instance,p:{skewY:0,x:735}}]},1).to({state:[{t:this.shape},{t:this.btn19},{t:this.btn20},{t:this.instance,p:{skewY:180,x:701.4}}]},29).to({state:[{t:this.shape},{t:this.btn19},{t:this.btn20},{t:this.instance,p:{skewY:180,x:701.4}}]},30).to({state:[{t:this.shape_1},{t:this.btn19},{t:this.btn21},{t:this.instance,p:{skewY:0,x:735}}]},1).wait(29));
 
 	// teks
 	this.shape_2 = new cjs.Shape();
@@ -11269,6 +11275,7 @@ lib.properties = {
 		{src:"images11/MbakKepo31.png", id:"MbakKepo31"},
 		{src:"images11/MbakKepo40.png", id:"MbakKepo40"},
 		{src:"images11/MbakKepo41.png", id:"MbakKepo41"},
+		{src:"images11/nextend.png", id:"nextend"},
 		{src:"images11/next.png", id:"next"},
 		{src:"images11/peta_batubertulis.png", id:"peta_batubertulis"},
 		{src:"images11/peta_batujato.png", id:"peta_batujato"},
